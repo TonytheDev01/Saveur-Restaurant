@@ -1100,6 +1100,10 @@ select.form-input {
   box-shadow: var(--shadow-md);
 }
 
+.map__iframe {
+  border: 0;
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background: var(--color-primary-dark);
