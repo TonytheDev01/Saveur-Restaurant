@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saveur Restaurant — Authentic flavours, unforgettable dining experiences in the heart of Abuja."
+    />
+    <title>Saveur Restaurant | Fine Dining & Takeaway</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/index.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar">
+      <nav class="navbar__inner container">
+        <a href="index.html" class="navbar__logo" aria-label="Saveur Home">
+          <span class="logo-icon">🍽</span> Saveur
+        </a>
+        <button
+          class="navbar__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="navbar__links" id="navMenu" role="list">
+          <li><a href="#home" class="navbar__link">Home</a></li>
+          <li><a href="#menu" class="navbar__link">Menu</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#testimonials" class="navbar__link">Reviews</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+          <li>
+            <a href="#reserve" class="btn btn--primary">Reserve a Table</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section class="hero" id="home" aria-label="Hero section">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+          <span class="hero__badge">Est. 2019 · Abuja, Nigeria</span>
+          <h1 class="hero__heading">
+            Taste the Art of<br /><em>Authentic Flavour</em>
+          </h1>
+          <p class="hero__sub">
+            From farm-fresh ingredients to masterfully crafted dishes — every
+            plate tells a story worth savouring.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary btn--lg"
+              >Explore Our Menu</a
+            >
+            <a href="#reserve" class="btn btn--outline btn--lg"
+              >Reserve a Table</a
+            >
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num">200+</span>
+              <span class="stat__label">Dishes Served Daily</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__num">5★</span>
+              <span class="stat__label">Rated on Google</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <span class="stat__num">12+</span>
+              <span class="stat__label">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- ========== WHY US STRIP ========== -->
+      <section class="features" aria-label="Why choose us">
+        <div class="container features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3 class="feature-card__title">Fresh Ingredients</h3>
+            <p class="feature-card__text">
+              Locally sourced, daily-delivered produce — no shortcuts, ever.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-fire-burner"></i>
+            </div>
+            <h3 class="feature-card__title">Master Chefs</h3>
+            <p class="feature-card__text">
+              Our kitchen is led by chefs trained in Lagos, London & Paris.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3 class="feature-card__title">Fast Delivery</h3>
+            <p class="feature-card__text">
+              Order online and get hot meals delivered in under 40 minutes.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-card__title">Hygiene First</h3>
+            <p class="feature-card__text">
+              NAFDAC-certified kitchen with daily health and safety checks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MENU PREVIEW ========== -->
+      <section
+        class="menu-section section"
+        id="menu"
+        aria-label="Featured menu"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Our Menu</span>
+            <h2 class="section-title">Dishes Worth Coming Back For</h2>
+            <p class="section-sub">
+              A curated selection of our most-loved plates — crafted fresh,
+              served with love.
+            </p>
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button
+              class="menu-tab is-active"
+              data-tab="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="menu-tab"
+              data-tab="starters"
+              role="tab"
+              aria-selected="false"
+            >
+              Starters
+            </button>
+            <button
+              class="menu-tab"
+              data-tab="mains"
+              role="tab"
+              aria-selected="false"
+            >
+              Main Course
+            </button>
+            <button
+              class="menu-tab"
+              data-tab="desserts"
+              role="tab"
+              aria-selected="false"
+            >
+              Desserts
+            </button>
+            <button
+              class="menu-tab"
+              data-tab="drinks"
+              role="tab"
+              aria-selected="false"
+            >
+              Drinks
+            </button>
+          </div>
+
+          <div class="menu-grid" id="menuGrid">
+            <!-- Starters -->
+            <article class="menu-card" data-category="starters">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1629224316810-9d8805b95e76?w=400&h=280&fit=crop"
+                  alt="Peppered Snail"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Popular</span>
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Starter</span>
+                  <span class="menu-card__price">₦3,500</span>
+                </div>
+                <h3 class="menu-card__title">Peppered Snail</h3>
+                <p class="menu-card__desc">
+                  Slow-cooked garden snails tossed in our signature pepper sauce
+                  with herbs.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="starters">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=280&fit=crop"
+                  alt="Grilled Suya Skewers"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Starter</span>
+                  <span class="menu-card__price">₦2,800</span>
+                </div>
+                <h3 class="menu-card__title">Grilled Suya Skewers</h3>
+                <p class="menu-card__desc">
+                  Tenderly spiced beef skewers, grilled to perfection over open
+                  flame.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <!-- Mains -->
+            <article class="menu-card" data-category="mains">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=280&fit=crop"
+                  alt="Jollof Rice Special"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">Chef's Pick</span>
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Main</span>
+                  <span class="menu-card__price">₦5,200</span>
+                </div>
+                <h3 class="menu-card__title">Party Jollof Special</h3>
+                <p class="menu-card__desc">
+                  The real smoky party jollof — paired with fried plantain &
+                  grilled chicken.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="mains">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=280&fit=crop"
+                  alt="Egusi Soup"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Main</span>
+                  <span class="menu-card__price">₦4,500</span>
+                </div>
+                <h3 class="menu-card__title">Egusi & Pounded Yam</h3>
+                <p class="menu-card__desc">
+                  Rich egusi soup loaded with assorted meats and stockfish,
+                  paired with silky pounded yam.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="mains">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=280&fit=crop"
+                  alt="Seafood Okra"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Main</span>
+                  <span class="menu-card__price">₦6,000</span>
+                </div>
+                <h3 class="menu-card__title">Seafood Okra</h3>
+                <p class="menu-card__desc">
+                  Fresh prawns, crab, and fish in a silky okra base — a coastal
+                  Nigerian classic.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <!-- Desserts -->
+            <article class="menu-card" data-category="desserts">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=280&fit=crop"
+                  alt="Puff Puff Deluxe"
+                  loading="lazy"
+                />
+                <span class="menu-card__badge">New</span>
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Dessert</span>
+                  <span class="menu-card__price">₦1,800</span>
+                </div>
+                <h3 class="menu-card__title">Puff Puff Deluxe</h3>
+                <p class="menu-card__desc">
+                  Golden, airy puff puff dusted with cinnamon sugar & chocolate
+                  drizzle.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+
+            <!-- Drinks -->
+            <article class="menu-card" data-category="drinks">
+              <div class="menu-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=280&fit=crop"
+                  alt="Zobo Royale"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <span class="menu-card__tag">Drink</span>
+                  <span class="menu-card__price">₦1,200</span>
+                </div>
+                <h3 class="menu-card__title">Zobo Royale</h3>
+                <p class="menu-card__desc">
+                  Hibiscus-infused zobo with ginger, pineapple, and a hint of
+                  mint.
+                </p>
+                <a href="#reserve" class="btn btn--ghost btn--sm">Order Now</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-cta">
+            <a href="#reserve" class="btn btn--primary"
+              >View Full Menu & Book a Table</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="about-section section" id="about" aria-label="About us">
+        <div class="container about__grid">
+          <div class="about__images">
+            <img
+              class="about__img about__img--main"
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=700&fit=crop"
+              alt="Saveur restaurant interior"
+              loading="lazy"
+            />
+            <img
+              class="about__img about__img--accent"
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=280&h=320&fit=crop"
+              alt="Chef plating a dish"
+              loading="lazy"
+            />
+            <div class="about__badge-card">
+              <span class="about__badge-num">12</span>
+              <span class="about__badge-text"
+                >Years of Culinary Excellence</span
+              >
+            </div>
+          </div>
+          <div class="about__content">
+            <span class="section-tag">Our Story</span>
+            <h2 class="section-title">Where Passion Meets the Plate</h2>
+            <p class="about__text">
+              Saveur was born from one simple belief — that every Nigerian
+              deserves to experience food that feels like a warm embrace.
+              Founded in 2012 in the heart of Abuja, we've grown from a 10-table
+              dining room to one of the most beloved restaurants in the FCT.
+            </p>
+            <p class="about__text">
+              Our chefs bring decades of culinary training across West Africa
+              and Europe, blending tradition with bold innovation — so every
+              dish honours our roots while surprising your palate.
+            </p>
+            <ul class="about__list" aria-label="Our highlights">
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i> 100%
+                locally sourced proteins & vegetables
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                NAFDAC-certified kitchen and storage
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i> Private
+                dining & event catering available
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i> Open 7 days
+                — 11am to 10pm daily
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS ========== -->
+      <section
+        class="testimonials section"
+        id="testimonials"
+        aria-label="Customer reviews"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Reviews</span>
+            <h2 class="section-title">What Our Guests Say</h2>
+            <p class="section-sub">
+              Real experiences from real people who've dined with us.
+            </p>
+          </div>
+          <div class="testimonials__grid">
+            <blockquote class="testi-card">
+              <div class="testi-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testi-card__quote">
+                "The party jollof alone is worth the trip from Lagos. Best
+                restaurant experience I've had in Abuja — hands down."
+              </p>
+              <footer class="testi-card__footer">
+                <img
+                  src="https://i.pravatar.cc/56?img=47"
+                  alt="Adaeze O."
+                  class="testi-card__avatar"
+                />
+                <div>
+                  <cite class="testi-card__name">Adaeze Okonkwo</cite>
+                  <span class="testi-card__role">Food Blogger, Lagos</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testi-card testi-card--featured">
+              <div class="testi-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testi-card__quote">
+                "We hosted our company dinner here and it was perfect. The
+                private dining setup, the service, and oh — the seafood okra!
+                Exceptional every time."
+              </p>
+              <footer class="testi-card__footer">
+                <img
+                  src="https://i.pravatar.cc/56?img=12"
+                  alt="Emeka T."
+                  class="testi-card__avatar"
+                />
+                <div>
+                  <cite class="testi-card__name">Emeka Tunde</cite>
+                  <span class="testi-card__role">CEO, BluePeak Ltd</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testi-card">
+              <div class="testi-card__stars" aria-label="5 stars">★★★★★</div>
+              <p class="testi-card__quote">
+                "I've been a regular for 3 years. The consistency is what keeps
+                me coming back — the quality never drops, and the staff always
+                remembers your name."
+              </p>
+              <footer class="testi-card__footer">
+                <img
+                  src="https://i.pravatar.cc/56?img=32"
+                  alt="Fatima B."
+                  class="testi-card__avatar"
+                />
+                <div>
+                  <cite class="testi-card__name">Fatima Bello</cite>
+                  <span class="testi-card__role">Loyal Customer, Abuja</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== RESERVATION CTA ========== -->
+      <section
+        class="reserve-section section"
+        id="reserve"
+        aria-label="Table reservation"
+      >
+        <div class="container reserve__grid">
+          <div class="reserve__content">
+            <span class="section-tag">Reservations</span>
+            <h2 class="reserve__title">
+              Ready for a Memorable Dining Experience?
+            </h2>
+            <p class="reserve__sub">
+              Book your table in minutes. We accommodate groups of 2 to 200 —
+              from intimate dinners to corporate events.
+            </p>
+            <ul class="reserve__info-list">
+              <li>
+                <i class="fa-solid fa-clock" aria-hidden="true"></i> Open Daily:
+                11:00 AM – 10:00 PM
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Plot
+                45, Wuse Zone 3, Abuja FCT
+              </li>
+              <li>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i> +234 803
+                000 0000
+              </li>
+            </ul>
+          </div>
+          <form class="reserve__form" aria-label="Reservation form" novalidate>
+            <h3 class="reserve__form-title">Book a Table</h3>
+            <div class="form-group">
+              <label for="reserveName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="reserveName"
+                name="name"
+                class="form-input"
+                placeholder="John Doe"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reservePhone" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="reservePhone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+234 800 000 0000"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="reserveGuests" class="form-label"
+                  >No. of Guests</label
+                >
+                <select
+                  id="reserveGuests"
+                  name="guests"
+                  class="form-input"
+                  required
+                >
+                  <option value="">Select guests</option>
+                  <option>1–2</option>
+                  <option>3–5</option>
+                  <option>6–10</option>
+                  <option>11–20</option>
+                  <option>21+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reserveDate" class="form-label">Date</label>
+                <input
+                  type="date"
+                  id="reserveDate"
+                  name="date"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="reserveTime" class="form-label">Time</label>
+                <select
+                  id="reserveTime"
+                  name="time"
+                  class="form-input"
+                  required
+                >
+                  <option value="">Select time</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>6:00 PM</option>
+                  <option>7:00 PM</option>
+                  <option>8:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="reserveNote" class="form-label"
+                >Special Requests
+                <span class="form-optional">(optional)</span></label
+              >
+              <textarea
+                id="reserveNote"
+                name="note"
+                class="form-input form-textarea"
+                placeholder="Dietary requirements, occasion, seating preferences..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Confirm Reservation
+            </button>
+            <p class="reserve__form-note">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i> We'll call to
+              confirm within 30 minutes.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section
+        class="contact-section section"
+        id="contact"
+        aria-label="Contact and location"
+      >
+        <div class="container contact__grid">
+          <div class="contact__info">
+            <span class="section-tag">Find Us</span>
+            <h2 class="section-title">We're Easy to Find</h2>
+            <p class="contact__text">
+              Walk in, call ahead, or reach us on WhatsApp — we're always happy
+              to help.
+            </p>
+            <div class="contact__cards">
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="contact-card__title">Address</h4>
+                  <p>Plot 45, Wuse Zone 3<br />Abuja, FCT, Nigeria</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="contact-card__title">Phone & WhatsApp</h4>
+                  <p><a href="tel:+2348030000000">+234 803 000 0000</a></p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="contact-card__title">Email</h4>
+                  <p><a href="mailto:hello@saveur.ng">hello@saveur.ng</a></p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="contact-card__title">Opening Hours</h4>
+                  <p>Mon–Sun: 11:00 AM – 10:00 PM</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact__socials" aria-label="Social media links">
+              <a href="#" class="social-link" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Twitter/X"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3!2d7.49!3d9.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDQnMTIuMCJOIDfCsDI5JzI0LjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Saveur Restaurant location on Google Maps"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Saveur Home"
+            >🍽 Saveur</a
+          >
+          <p class="footer__tagline">
+            Authentic flavours, unforgettable dining experiences — since 2012.
+          </p>
+          <div class="footer__socials" aria-label="Footer social links">
+            <a
+              href="#"
+              class="social-link social-link--sm"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="social-link social-link--sm"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social-link social-link--sm" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <h4 class="footer__nav-title">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Plot 45, Wuse Zone 3, Abuja
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +234 803 000 0000</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@saveur.ng</p>
+          <p><i class="fa-solid fa-clock"></i> Daily: 11AM – 10PM</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          &copy; <span id="year"></span> Saveur Restaurant. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLOAT ========== -->
+    <a
+      href="https://wa.me/2348030000000?text=Hi%20Saveur%2C%20I%27d%20like%20to%20make%20a%20reservation%21"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="whatsapp-float__tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite" hidden>
+      <i class="fa-solid fa-circle-check"></i>
+      <span id="toastMsg">Reservation submitted successfully!</span>
+    </div>
+
+    <!-- Load config FIRST so main.js can read business settings -->
+    <script src="config.js"></script>
+    <script src="assets/index.js"></script>
+  </body>
+</html>

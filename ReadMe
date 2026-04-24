@@ -1,0 +1,122 @@
+# 🍽 Your Restaurant Website — Setup Guide
+
+Welcome! This guide will help you update your website with your own business information.
+**You don't need to know how to code.** Follow the steps below.
+
+---
+
+## 📁 Understanding Your Files
+
+```
+your-restaurant/
+│
+├── config.js           ⭐ THIS IS WHERE YOU MAKE ALL YOUR CHANGES
+│
+├── index.html              (your website — don't edit this)
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css       (design & colors — don't edit this)
+│   ├── js/
+│   │   └── main.js         (website logic — don't edit this)
+│   └── images/             ⭐ PUT YOUR BUSINESS PHOTOS HERE
+│
+└── README.md               (this guide)
+```
+
+---
+
+## ✏️ Step 1 — Update Your Business Information
+
+Open the file called **`config.js`** in any text editor (Notepad, VS Code, etc.)
+
+Change the values inside the quote marks `"..."` to your own information:
+
+```
+business name, phone number, WhatsApp number, email,
+address, opening hours, social media links
+```
+
+**Save the file when you're done.** Your website will update automatically.
+
+---
+
+## 🖼 Step 2 — Add Your Own Photos
+
+1. Copy your restaurant photos into the **`assets/images/`** folder
+2. Name them clearly — example: `hero-bg.jpg`, `dish-jollof.jpg`, `interior.jpg`
+3. Open `index.html` in a text editor
+4. Find the image you want to replace — look for lines like:
+   ```
+   src="https://images.unsplash.com/..."
+   ```
+5. Replace the URL with your image path:
+   ```
+   src="assets/images/your-photo.jpg"
+   ```
+
+**Photo tips:**
+
+- Use JPG format for photos (smaller file size)
+- Hero background: at least 1600×900px
+- Menu dish photos: at least 800×600px
+- Keep each photo under 500KB for fast loading (use tinypng.com to compress)
+
+---
+
+## 🗺 Step 3 — Update Your Google Maps Location
+
+1. Go to **maps.google.com**
+2. Search for your restaurant address
+3. Click **Share** → **Embed a map** → **Copy HTML**
+4. From the copied code, find the part that says `src="https://www.google.com/maps/embed?..."`
+5. Copy only that link (without the quotes)
+6. Paste it into `config.js` where it says `mapEmbedUrl:`
+
+---
+
+## 🎨 Step 4 — Change Your Brand Colors (Optional)
+
+In `config.js`, find the `colors` section and update the hex codes:
+
+```
+primary:  "#8B1A00"   ← Your main brand color
+accent:   "#F97300"   ← Your highlight color
+```
+
+To find your brand colors as hex codes, visit **coolors.co** or use your designer's brand guide.
+
+---
+
+## 📞 Step 5 — Update Your Menu Items
+
+Open `index.html` and search for `menu-card`. Each menu item looks like this:
+
+```html
+<h3 class="menu-card__title">Dish Name Here</h3>
+<p class="menu-card__desc">Description here</p>
+<span class="menu-card__price">₦0,000</span>
+```
+
+Change the dish name, description, and price to match your actual menu.
+
+---
+
+## 🚀 Going Live
+
+Once you're happy with everything, send all your files to your developer
+and they will upload your website to the internet with a custom domain name.
+
+---
+
+## 📞 Need Help?
+
+Contact your developer:
+
+- **Name:** Anthony Michael (TonyDev)
+- **WhatsApp:** +234 816 261 6137
+- **Email:** tonydevcreation@gmail.com
+
+---
+
+_Website built by TonyDev — Premium Web Templates for Nigerian Businesses_
